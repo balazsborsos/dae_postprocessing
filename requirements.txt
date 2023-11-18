@@ -1,0 +1,6 @@
+numpy==1.23.5
+Pillow==10.1.0
+pytorch_lightning==2.1.2
+scikit_learn==1.2.1
+torch==1.12.1
+torchvision==0.16.1
