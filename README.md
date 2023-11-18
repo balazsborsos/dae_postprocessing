@@ -4,7 +4,7 @@ This is an unofficial PyTorch implementation of [Anatomical Priors for Image Seg
 ![Method](./imgs/method.png "Method")
 *Post-DAE works as a post-processing step and improves the anatomical  plausibility of segmentation masks obtained with arbitrary methods.*
 
-## TransUNet
+## Denoising Autoencoder (DAE)
 - We verify, that DAE can be used as an independent post-processing step to correct problematic and non-anatomically plausible masks produced by arbitrary segmentation methods.
 - This is a method that can be trained using segmentation-only datasets or anatomical masks coming from arbitrary image modalities, since the DAE is trained using only segmentation masks, and no intensity information is required during learning. [1]
 - We validate Post-DAE in the context of lung segmentation in X-ray images, showing its robustness by improving segmentation masks
