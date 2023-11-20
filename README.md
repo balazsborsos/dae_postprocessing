@@ -4,7 +4,7 @@ This is an unofficial PyTorch implementation of [Anatomical Priors for Image Seg
 ![Method](./imgs/method.png "Method")
 *Post-DAE works as a post-processing step and improves the anatomical  plausibility of segmentation masks obtained with arbitrary methods.*
 
-## Denoising Autoencoder (DAE)
+## Contributions
 - We verify, that DAE can be used as an independent post-processing step to correct problematic and non-anatomically plausible masks produced by arbitrary segmentation methods.
 - This is a method that can be trained using segmentation-only datasets or anatomical masks coming from arbitrary image modalities, since the DAE is trained using only segmentation masks, and no intensity information is required during learning. [1]
 - We validate Post-DAE in the context of lung segmentation in X-ray images, showing its robustness by improving segmentation masks
@@ -28,7 +28,7 @@ An example config yml can be found in the utils folder. The input is just the pa
 
 ## Results
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Original Image** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Predicted** 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Input Image** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Predicted** 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Ground Truth** 
 
 <img src="./imgs/val_1.png" width="750">
@@ -40,8 +40,8 @@ An example config yml can be found in the utils folder. The input is just the pa
 
 ## Dataset
 - Chest Xray Masks and Labels [2] dataset was used for training.
-- Dataset can be accessed freely on Kaggle.
-- The data was complied for papers [3] and [4]
+- It freely accessible on Kaggle.
+- The dataset was compiled from papers [3] and [4]
 
 ## Citation
 
